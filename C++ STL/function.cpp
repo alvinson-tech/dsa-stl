@@ -29,13 +29,13 @@ void explainSort(){
 
 void explainAccumalate() {
     int arr[5] = {6, 3, 7, 1, 9};
-    cout << accumulate(arr, arr + 5, 4);
+    cout << accumulate(arr, arr + 4, 5);
     cout << endl;
 }
 
-void expplainCount() {
+void explainCount() {
     int arr[5] = {6, 3, 1, 1, 9};
-    cout << count(arr, arr + 5, 1);
+    cout << count(arr, arr + 5, 3);
     cout << endl;
 }
 
@@ -44,22 +44,25 @@ void explainFind() {
     // auto it = find(arr, arr + 5, 1);
     // cout << *it << endl;
 
-    auto it = find(arr, arr + 5, 8);
+    auto it = find(arr, arr + 5, 9);
     if(it == (arr + 5)) {
         cout << "Not Found!";
+    }
+    else {
+        cout << *it << endl;
     }
     cout << endl;
 }
 
 void explainNextPermutation() {
-    string str = "abc";
+    string str = "bac";
     do {
         cout << str << endl;
     } while(next_permutation(str.begin(), str.end()));
 }
 
 void explainPrevPermutation() {
-    string str = "abc";
+    string str = "bac";
     do {
         cout << str << endl;
     } while(prev_permutation(str.begin(), str.end()));
@@ -74,7 +77,7 @@ void explainMaxElement() {
 }
 
 void explainReverse() {
-    int arr[] = {7,6,5,10,9};
+    int arr[] = {1,2,3,4,5,};
     reverse(arr, arr + 5);
     for(int i = 0; i < 5; i++) {
         cout << arr[i] << " ";
@@ -83,7 +86,7 @@ void explainReverse() {
 }
 
 void explainPower() {
-    int n = pow(2, 3);
+    int n = pow(3,2);
     cout << n << endl;
 }
 

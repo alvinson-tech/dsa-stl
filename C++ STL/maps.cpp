@@ -48,15 +48,15 @@ void explainMaps(){
     }
     cout << endl;
 
-    // mpp.erase(1);
-    // for(auto it : mpp) {
-    //     cout << it.first << " -> " << it.second << endl;
-    // }
+    mpp.erase(1);
+    for(auto it : mpp) {
+        cout << it.first << " -> " << it.second << endl;
+    }
 
-    // mpp.erase(mpp.begin(), mpp.find(3)); // deletes elements before key 2
-    // for(auto it : mpp) {
-    //  cout << it.first << " -> " << it.second << endl;
-    // }
+    mpp.erase(mpp.begin(), mpp.find(3)); // deletes elements before key 2
+    for(auto it : mpp) {
+     cout << it.first << " -> " << it.second << endl;
+    }
 
     mpp.clear();
     if(mpp.empty()){
