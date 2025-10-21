@@ -84,6 +84,3 @@ int main() {
     cin >> num;
     checkDivsiors(num);
 }
-
-
-// prime numbers, odd, even, divisors, factorial, fibonacci..
