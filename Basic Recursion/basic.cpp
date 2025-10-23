@@ -12,7 +12,6 @@ void printName() {
     
     cnt++;
     cout << "Alvin is Great! 😎" << endl;
-    cout << "No kidding.. 🤭" << endl;
     printName();
 }
 
