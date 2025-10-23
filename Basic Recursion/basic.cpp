@@ -4,17 +4,29 @@
 
 #include<iostream>
 using namespace std;
-int cnt = 0;
 
-void printName() {
-    if(cnt == 5)
-        return;
-    
-    cnt++;
-    cout << "Alvin is Great! 😎" << endl;
-    printName();
-}
+class Solution {
+    public:
+        void printName(string name, int count, int N) {
+            if(count == N)
+                return;
+            
+            cout << name << endl;
+
+            printName(name, count + 1, N);
+        }
+};
 
 int main() {
-    printName();
+    Solution sol;
+    int num;
+    string name;
+
+    cout << "Enter the name to be printed: ";
+    cin >> name;
+
+    cout << "Enter the number of times: ";
+    cin >> num;
+
+    sol.printName(name, 0, num);
 }
